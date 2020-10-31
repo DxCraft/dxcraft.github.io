@@ -1,0 +1,38 @@
+title: Overcast Community
+description: >-
+  The awesome server that lets you play large varieties of Minecraft PvP
+  anytime, anywhere.
+url: https://oc.tc
+server_address: play.oc.tc
+
+google_analytics: UA-154852120-1
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+defaults:
+  - scope:
+      type: pages
+    values:
+      layout: page
+  - scope:
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: assets/img/image-slider
+    values:
+      image_slider: true
+
+include: [
+  '_pages'
+]
+
+exclude: [
+  'README.md',
+  'LICENSE.md'
+]
+
+plugins:
+  - jekyll-redirect-from

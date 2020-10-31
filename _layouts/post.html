@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article>
+  <div class="container my-4">
+    <h2 class="post-title">
+      {{ page.title }}
+      <div class="post-info">
+        {{ page.author }}
+        -
+        {{ page.date | date: '%B %e, %Y' }}
+      </div>
+    </h2>
+    <hr>
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </div>
+</article>
